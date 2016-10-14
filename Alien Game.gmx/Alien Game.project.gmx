@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_new_player</sprite>
+    <sprite>sprites\spr_fireball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mars</background>
@@ -19,6 +20,7 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_hotkeys</object>
+    <object>objects\obj_fireball</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
