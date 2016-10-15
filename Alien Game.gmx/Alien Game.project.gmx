@@ -23,6 +23,7 @@
     <object>objects\obj_hotkeys</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_key_shoot</object>
+    <object>objects\obj_key_move</object>
     <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
