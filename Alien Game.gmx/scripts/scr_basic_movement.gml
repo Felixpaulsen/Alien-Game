@@ -13,3 +13,4 @@ if (keyboard_check(ord('D')) && place_free(x+spd,y))
 
 if (keyboard_check(ord('S')) && place_free(x,y+spd))
     y += spd;
+
