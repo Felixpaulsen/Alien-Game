@@ -7,8 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_new_player</sprite>
-    <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_a_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mars</background>
@@ -20,7 +20,8 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_hotkeys</object>
-    <object>objects\obj_fireball</object>
+    <object>objects\obj_bullet</object>
+    <object>objects\obj_key_shoot</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
