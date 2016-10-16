@@ -130,12 +130,12 @@ if speed == 0
 
 if (keyboard_check_pressed(ord('L')))
 {
-    instance_create(x-32,y, obj_bullet)
+    instance_create(x-1,choose(y,y+4,y-4), obj_bullet)
 }
 
 if (keyboard_check_pressed(ord('R')))
 {
-    instance_create(x+32,y, obj_bullet)
+    instance_create(x+1,choose(y,y+4,y-4), obj_bullet)
 }
 </string>
           </argument>
