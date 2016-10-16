@@ -25,6 +25,7 @@
     <object>objects\obj_key_shoot</object>
     <object>objects\obj_key_move</object>
     <object>objects\obj_enemy</object>
+    <object>objects\obj_control_android</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>

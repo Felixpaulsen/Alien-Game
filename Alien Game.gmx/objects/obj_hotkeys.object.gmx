@@ -29,7 +29,7 @@
 
 switch(keyboard_key)
 {
-    case ord('R'): game_restart(); break;
+    /*case ord('R'): game_restart(); break;*/ //i deleted it bcs i use r to create the r bullet in the player step ev
     case vk_escape: game_end(); break;
 }
 </string>

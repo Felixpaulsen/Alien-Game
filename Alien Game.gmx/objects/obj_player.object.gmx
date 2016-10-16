@@ -28,6 +28,8 @@
             <string>///Initialize variables
 spd = 7;
 global.shoot = 1
+
+draw_set_alpha(1)
 </string>
           </argument>
         </arguments>
@@ -103,6 +105,37 @@ if speed == 0
 {
     image_speed = 0;
     image_index = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///shooting
+
+if (keyboard_check_pressed(ord('L')))
+{
+    instance_create(x-32,y, obj_bullet)
+}
+
+if (keyboard_check_pressed(ord('R')))
+{
+    instance_create(x+32,y, obj_bullet)
 }
 </string>
           </argument>
