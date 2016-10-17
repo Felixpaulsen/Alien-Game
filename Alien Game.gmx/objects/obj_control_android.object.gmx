@@ -25,15 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>size = 80
-mx = 0
-my = 0
-cx = 150
-cy = 400
-left = virtual_key_add(cx-size,cy,size,size, ord('A'))
-right = virtual_key_add(cx+size,cy,size,size, ord('D'))
-sleft = virtual_key_add(cx+600-size, cy, size, size, ord('L'))
-sright = virtual_key_add(cx+650, cy, size, size, ord('R'))
+            <string>size = 80;
+mx = 0;
+my = 0;
+cx = 150;
+cy = 400;
+left = virtual_key_add(cx-size,cy,size,size, ord('A'));
+right = virtual_key_add(cx+size,cy,size,size, ord('D'));
+up = virtual_key_add(cx-size,cy-150,size,size, ord('W'));
+down = virtual_key_add(cx+size,cy-150,size,size, ord('S'));
+
+sleft = virtual_key_add(cx+600-size, cy, size, size, ord('L'));
+sright = virtual_key_add(cx+650, cy, size, size, ord('R'));
+sup = virtual_key_add(cx+600-size, cy-150, size, size, ord('O'));
+sdown = virtual_key_add(cx+650, cy-150, size, size, ord('P'));
 </string>
           </argument>
         </arguments>
@@ -60,8 +65,13 @@ sright = virtual_key_add(cx+650, cy, size, size, ord('R'))
 
 draw_rectangle(70,400,150,480,0)//left
 draw_rectangle(230,400,310,480,0)//right
+draw_rectangle(70,400-150,150,480-150,0)//Up
+draw_rectangle(70+150,400-150,150+150,480-150,0)//Down
+
 draw_rectangle(670,400,750,480,0)//sright
-draw_rectangle(800,400,880,480,0)//sleft
+draw_rectangle(670+150,400,750+150,480,0)//sleft
+draw_rectangle(670,400-150,750,480-150,0)//sup
+draw_rectangle(670+150,400-150,750+150,480-150,0)//sdown
 </string>
           </argument>
         </arguments>
